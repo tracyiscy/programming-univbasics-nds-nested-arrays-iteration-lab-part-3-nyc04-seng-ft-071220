@@ -8,8 +8,8 @@ def join_nested_strings(src)
     while inner_count<src[count].length do
       if src[count][inner_count].class =="String".class
         string = src[count][inner_count]
+        new_array << src[count][inner_count]
       end
-      new_array << src[count][inner_count]
       inner_count+=1
     end
     count+=1
